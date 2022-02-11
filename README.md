@@ -13,9 +13,8 @@ If you want to remove a task, just delete what you have written and press save o
 
 # Deployed
 
-[Work Day Scheduler](https://pawan495.github.io/work-scdedule/
-
-![Work Day Schedule](./Assets/Images/pic1.png)
+[Work Day Scheduler]( https://pawan495.github.io/work-scdedule/)
+![Work Day Schedule](./assets/images/pic1.png)
 
 # Bonus 🏆
 
