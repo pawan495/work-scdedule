@@ -17,5 +17,5 @@ If you want to remove a task, just delete what you have written and press save o
 
 # Bonus 🏆
 
-University of Toronto BootCamp: course material, instrutor, W3Schools and google(https;//www.google.com)
+University of Toronto BootCamp: course material, instrutor, W3Schools and google(https://www.google.com)
 
