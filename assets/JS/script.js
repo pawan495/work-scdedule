@@ -17,12 +17,6 @@ const hour2 = 14;
 const hour3 = 15;
 const hour4 = 16;
 const hour5 = 17;
-//button function to clear local storage and clear contents
-$("#clearFiledBtn").click(function(event){
-event.preventDefault;
-$("textarea").val("");
-localStorage.clear();
-});
 
 // Current date and time
 const currentDay = moment().format("llll");
@@ -31,7 +25,7 @@ const currentDay = moment().format("llll");
 const currentHour = moment().hour();
 
 // Save button
-const saveBtn = $(".saveBtn");
+const saveBtn = document.getElementsByClassName('savebtn');
 
 // Display current date and time
 $("#currentDay").html(currentDay);
@@ -138,9 +132,20 @@ if (currentHour < hour5) {
 
 // Save to Local Storage
 // When the this keyword is called using event listeners, it will point toward the DOM element that the event listener is attached to, thus the saveBtn in this case
-saveBtn.click(function () {
-  const value = $(this).siblings(".description").val();
-  const time = $(this).parent().attr("id");
+for(var i = 0; i < saveBtn.length; i++){
 
-  localStorage.setItem(time, value);
-});
+
+  saveBtn[i].addEventListener('click', function(){
+     const value = $(this).siblings(".description").val();
+   const time = $(this).parent().attr("id");
+  
+     localStorage.setItem(time, value);
+  // });
+  })
+  // saveBtn[i].addEventListener((function () {
+
+  //   alert('hi')
+ 
+}
+
+
